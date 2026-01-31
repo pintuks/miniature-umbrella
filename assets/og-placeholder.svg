@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffd1e1" />
+      <stop offset="100%" stop-color="#f48fb1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad)" />
+  <text x="50%" y="45%" text-anchor="middle" font-size="56" fill="#ffffff" font-family="Playfair Display, serif">
+    For Sweety 💗
+  </text>
+  <text x="50%" y="58%" text-anchor="middle" font-size="28" fill="#fff5f9" font-family="Inter, sans-serif">
+    Valentine Week surprise by Pintu
+  </text>
+</svg>
