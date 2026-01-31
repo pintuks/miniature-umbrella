@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For Sweety 💗 | Valentine Week</title>
+    <meta
+      name="description"
+      content="A Valentine Week surprise made with love by Pintu."
+    />
+    <meta property="og:title" content="For Sweety 💗 | Valentine Week" />
+    <meta
+      property="og:description"
+      content="A Valentine Week surprise made with love by Pintu."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-placeholder.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+    <header class="navbar" id="top">
+      <div class="logo">For Sweety 💗</div>
+      <nav>
+        <a href="#days">Days</a>
+        <a href="#note">Love Note</a>
+        <a href="#countdown">Countdown</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#surprise">Surprise</a>
+        <a href="#share">Share</a>
+      </nav>
+      <button class="menu" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Valentine Week for Sweety</p>
+          <h1 id="hero-title">Sweety, this week is ours.</h1>
+          <p class="subheadline">7 little days, 1 big love.</p>
+          <div class="cta-group">
+            <a class="btn primary" href="#days">Explore the Days</a>
+            <a class="btn ghost" href="#note">Write a Note to Sweety</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p>To Sweety,</p>
+          <h2>Every day with you feels like a celebration.</h2>
+          <span>— Pintu</span>
+        </div>
+      </section>
+
+      <section class="section" id="days" aria-labelledby="days-title">
+        <div class="section-heading">
+          <h2 id="days-title">Valentine Week Days</h2>
+          <p>Tap a day for a sweet idea crafted for Sweety.</p>
+        </div>
+        <div class="card-grid" id="days-grid"></div>
+      </section>
+
+      <section class="section" id="note" aria-labelledby="note-title">
+        <div class="section-heading">
+          <h2 id="note-title">Love Note Generator</h2>
+          <p>Craft a fresh note for Sweety anytime.</p>
+        </div>
+        <div class="note-card">
+          <form id="note-form">
+            <label>
+              To
+              <input type="text" name="to" value="Sweety" />
+            </label>
+            <div class="chips" aria-label="Select a tone">
+              <button type="button" class="chip active" data-tone="Cute">Cute</button>
+              <button type="button" class="chip" data-tone="Romantic">
+                Romantic
+              </button>
+              <button type="button" class="chip" data-tone="Deep">Deep</button>
+              <button type="button" class="chip" data-tone="Funny">Funny</button>
+            </div>
+            <label>
+              Favorite thing about her (optional)
+              <input type="text" name="favorite" placeholder="Her smile" />
+            </label>
+            <label>
+              A memory we share (optional)
+              <input type="text" name="memory" placeholder="That rainy walk" />
+            </label>
+            <button class="btn primary" type="submit">
+              Generate a sweet note
+            </button>
+          </form>
+          <div class="note-output" aria-live="polite">
+            <h3>Your note</h3>
+            <p id="note-text">Choose a tone and generate a note 💗</p>
+            <div class="note-actions">
+              <button class="btn ghost" id="copy-note">Copy note</button>
+              <button class="btn ghost" id="download-note">
+                Download note card image
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="countdown" aria-labelledby="countdown-title">
+        <div class="section-heading">
+          <h2 id="countdown-title">Countdown to Valentine&apos;s Day</h2>
+          <p>Time zone locked to Asia/Kolkata (IST) for Sweety.</p>
+        </div>
+        <div class="countdown-card">
+          <div class="countdown" id="countdown-values" aria-live="polite"></div>
+          <p id="countdown-message"></p>
+        </div>
+      </section>
+
+      <section class="section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <h2 id="gallery-title">Mini Gallery</h2>
+          <p>Memories ready to be filled in.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <section class="section" id="surprise" aria-labelledby="surprise-title">
+        <div class="section-heading">
+          <h2 id="surprise-title">A Surprise for Sweety</h2>
+          <p>When she&apos;s ready, let the magic unfold.</p>
+        </div>
+        <div class="surprise-card">
+          <button class="btn primary" id="surprise-button">
+            Open your surprise, Sweety 🎁
+          </button>
+          <p class="surprise-message" id="surprise-message" aria-live="polite">
+            No matter what day it is… choosing you is my favorite tradition.
+          </p>
+          <div class="confetti" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section" id="share" aria-labelledby="share-title">
+        <div class="section-heading">
+          <h2 id="share-title">Share the Love</h2>
+          <p>Send the link to Sweety with one tap.</p>
+        </div>
+        <div class="share-card">
+          <button class="btn primary" id="share-button">Copy Share Link</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Forever yours, — Pintu 💗</p>
+    </footer>
+
+    <div class="modal" id="day-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content" role="document">
+        <button class="close" aria-label="Close modal">×</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <p id="modal-copyline" class="modal-copyline"></p>
+        <div class="modal-idea" id="modal-idea"></div>
+        <button class="btn ghost" id="modal-copy">Copy line</button>
+      </div>
+    </div>
+
+    <div
+      class="modal"
+      id="gallery-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-content" role="document">
+        <button class="close" aria-label="Close image">×</button>
+        <img id="gallery-image" alt="Memory" />
+        <p id="gallery-caption"></p>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
